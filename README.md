@@ -20,7 +20,7 @@
 > **_NOTE:_** readers will need to have basic knowledge about Object oriented Programming and C# to start learning from this tutorial.
 
 ## D. Game with JSON data implementation
-1. Splashkit functions to interact with JSON.
+1. Splashkit methods to interact with JSON.
     - Initialized JSON object
         ```cs
         //create empty object
