@@ -102,10 +102,10 @@
         SplashKit.JsonSetNumber(json_object, "active", active);
 
         // we can also pass this object inside another object:
-        // we a new object
+        // create another new object
         Json json_object2 = SplashKit.CreateJson();
+        
         // use JsonSetObject to insert the json_object to json_object2:
-
         SplashKit.JsonSetObject(json_object2, "player", json_object);
         SplashKit.JsonToFile(json_object2, "backup.json");
 
