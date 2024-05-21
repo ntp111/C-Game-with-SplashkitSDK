@@ -1,5 +1,4 @@
-
-# TUTORIAL: Create a c# game that utilizes JSON features from SplashkitSDK
+# TUTORIAL: Create a game that utilizes JSON data
 
 ## A. What is JSON?
 
@@ -13,8 +12,11 @@
 2. JSON usage
 - Load game configuration:
 - Saving and loading game process:
-- Faciliate communication between server and client for multiplayer game.
-## C. Game with JSON data implementation
+## C.What you get form this tutorial
+- You can create a functional game that can save the player process and load it back when open the game
+- You can easily manage and expand the complexity of the game from 1 place instead of changing the information though out your project.
+
+## D. Game with JSON data implementation
 1. Splashkit functions to interact with JSON.
     - Initialized JSON object
         ```
