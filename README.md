@@ -1,7 +1,5 @@
-# C-Robot-Dodge-Game-with-JSON-data
-create a game that can load configuration setting from and save gameplay process into JSON file
 
-# TUTORIAL: Create a game that utilizes JSON data
+# TUTORIAL: Create a c# game that utilizes JSON features from SplashkitSDK
 
 ## A. What is JSON?
 
