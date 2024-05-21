@@ -1,25 +1,28 @@
 # TUTORIAL: Create C# game that utilizes JSON data manipulation features from SplashkitSDK
 
 ## A. What is JSON?
-
+- JSON stands for JavaScript Object Notation
+- JSON is a lightweight format for storing and transporting data
 
 ## B. JSON in Game Development
 1. Benefit of JSON
-- 
--
--
+- Flexible: JSON format can store a wide range of data type and nested objects which will be beneficial for different projects' needs.
+- Readability: JSON format is very easy for developer to see and understand unlike machine language which makes it easier to to improve collaboration between developers.
+- Easy To modify: JSON can be edit in any editor or other development tools so all members in the project such as designer or game content creator to read and modify without looking at the game source code.
 
-2. JSON usage
-- Load game configuration:
-- Saving and loading game process:
+2. Basic usages of JSON data in game development
+- Load game configuration
+- Saving and loading game process
+  
 ## C.What you get form this tutorial
 - You can create a functional game that can save the player process and load it back when open the game
 - You can easily manage and expand the complexity of the game from 1 place instead of changing the information though out your project.
+> **_NOTE:_** readers will need to have basic knowledge about Object oriented Programming and C# to start learning from this tutorial.
 
 ## D. Game with JSON data implementation
 1. Splashkit functions to interact with JSON.
     - Initialized JSON object
-        ```
+        ```cs
         //create empty object
         Json json_object = SplashKit.CreateJson();
 
@@ -45,7 +48,7 @@
 
     - Interact with JSON object
 
-        ```
+        ```json
         // Example of Json data from config.json file:
         
         {
@@ -71,13 +74,13 @@
         }
         ```
 
-        ```
+        ```cs
         //read data inside JSON object
         Json jsonConfig = SplashKit.JsonFromFile("config.json");
         Json windowConfig = SplashKit.JsonReadObject(jsonConfig, "window");
 
         ```
-        ```
+        ```cs
         //get data from JSON object
         int height = SplashKit.JsonReadNumberAsInt(windowConfig, "height");
         string windowName = SplashKit.JsonReadString(windowConfig, "name");
@@ -89,7 +92,7 @@
         SplashKit.JsonReadNumberAsDouble(Json j, string key);
         ```
 
-        ```
+        ```cs
         //insert data into JSON object
         // first create json object:
         Json json_object = SplashKit.CreateJson();
@@ -118,7 +121,7 @@
     - Create Main function to initialize the game:
         - Initial setup:
             - Create config.json file and place it inside this directory: yourproject/resources/json
-                ```
+                ```json
                 {
                     "window": {
                         "name": "ROBOT DODGE WITH JSON",
@@ -148,10 +151,7 @@
             - initialized json object from file
             - get data from json object
             - called function to save game process
-            ```
-            
-
-
+            ```cs
             using System;
             using SplashKitSDK;
 
@@ -199,7 +199,7 @@
         - Important logic:
             - create json properties and use it to create player and robot
             - create function to save the game process.
-            ```
+            ```cs
             // constructor should set the player and robot config
             // player config is used to create new player
             public RobotDodge(Window GameWindow, Json PlayerConfig, Json RobotConfig)
@@ -239,7 +239,7 @@
             }
             ```
         - In Player class, use the config to setup the player
-            ```
+            ```cs
             // constructor uses json object to set the player image, lives, etc..
             // constructor also check the "backup.config" to set the state of the player from backup instead of creating new player.
             public Player(Window gameWindow, Json playerConfig)
@@ -294,8 +294,10 @@
             }
             ```
         - in Robot class, we will set up similarly
-            ```
+            ```cs
                 int SPEED = SplashKit.JsonReadNumberAsInt(_robotConfig, "speed");
             ```
+
+
 
 
