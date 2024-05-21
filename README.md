@@ -223,6 +223,7 @@
 
             // create function to save the gameplay process
             public void saveProgress(){
+                // active is to determine if we should use this file to continue the gameplay or not
                 int active = 0;
                 if (_Player.Lives > 0)
                 {
