@@ -12,7 +12,7 @@
 
 2. Basic usages of JSON data in game development
 - Load game configuration
-- Saving and loading game process
+- Save and load game process
   
 ## C.What you get form this tutorial
 - You can create a functional game that can save the player process and load it back when open the game
