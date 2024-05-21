@@ -17,7 +17,8 @@
 ## C.What you get form this tutorial
 - You can create a functional game that can save the player process and load it back when open the game
 - You can easily manage and expand the complexity of the game from 1 place instead of changing the information though out your project.
-> **_NOTE:_** readers will need to have basic knowledge about Object oriented Programming and C# to start learning from this tutorial.
+- Create a game that can change player's lives, speed, movement control and Robot's speed from 1 JSON file.
+> **_NOTE:_** readers will need to have basic knowledge about Object oriented Programming and C# syntax to start learning from this tutorial.
 
 ## D. Game with JSON data implementation
 1. Splashkit methods to interact with JSON.
