@@ -1,0 +1,29 @@
+{
+    "gameConfig": {
+      "audio": {
+        "musicFileName": "filename.mp3",
+        "musicFadeDuration":4,
+        "mute": false
+      },
+      "window": {
+        "name": "ROBOT DODGE WITH JSON",
+        "width": 800,
+        "height": 600
+      },
+      "controls": {
+        "moveForward": "W",
+        "moveBackward": "S",
+        "moveLeft": "A",
+        "moveRight": "D",
+        "dash": "Q",
+        "fire": "Space"
+      },
+      "player": {
+        "lives": 5,
+        "speed": 5
+      },
+      "robot": {
+        "speed": 5
+      }
+    }
+  }
