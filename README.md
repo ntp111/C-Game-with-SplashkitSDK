@@ -1,4 +1,4 @@
-# TUTORIAL: Create a game that utilizes JSON data
+# TUTORIAL: Create C# game that utilizes JSON data manipulation features from SplashkitSDK
 
 ## A. What is JSON?
 
